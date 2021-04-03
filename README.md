@@ -17,6 +17,11 @@ Controlled sampling of memories for replay: retrieving the samples which are mos
 
 pip install -r requirements.txt
 
+
+Data Preprocessing : Run create_train.py and create_test.py
+
+
+
 Running Experiments
 
     ER = Experience Replay baseline
@@ -53,5 +58,15 @@ python gen_main.py --method rand_gen --gen_method mir_gen --samples_per_task 100
 GEN-MIR:
 
 python gen_main.py --method mir_gen --gen_method mir_gen --samples_per_task 1000 --dataset kddcup99
+
+Acknowledgements
+
+We would like to thank authors of the following repositories (from which we borrowed code) for making the code public.
+
+    https://github.com/riannevdberg/sylvester-flows
+   
+   We would also like to thank Massimo,Eugene and Lucas (from which we adapted the code to fit to KDDCUP99 dataset)
+   https://github.com/optimass
+
 
 
