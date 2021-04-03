@@ -35,3 +35,23 @@ python er_main.py --method rand_replay --dataset kddcup99 --mem_size 50
 ER-MIR example:
 
 python er_main.py --method mir_replay --dataset kddcup99 --mem_size 50
+
+Generative Replay
+
+GEN baseline example:
+
+python gen_main.py --method rand_gen --gen_method rand_gen --samples_per_task 1000 --dataset kddcup99
+
+GEN-MIR (MIR only on the classifier):
+
+python gen_main.py --method mir_gen --gen_method rand_gen --samples_per_task 1000 --dataset kddcup99
+
+GEN-MIR (MIR only on the generator):
+
+python gen_main.py --method rand_gen --gen_method mir_gen --samples_per_task 1000 --dataset kddcup99
+
+GEN-MIR:
+
+python gen_main.py --method mir_gen --gen_method mir_gen --samples_per_task 1000 --dataset kddcup99
+
+
