@@ -16,3 +16,22 @@ Controlled sampling of memories for replay: retrieving the samples which are mos
     Pytorch 1.1.0
 
 pip install -r requirements.txt
+
+Running Experiments
+
+    ER = Experience Replay baseline
+    ER-MIR = Experience Replay + Maximally Interfered Retrieval
+    GEN = Generative Replay baseline
+    GEN-MIR = Generative Replay + Maximally Interfered Retrieval
+    AE = Hybrid Replay baseline
+    AE-MIR = Hybrid Replay + Maximally Interfered Retrieval
+
+Experience Replay
+
+ER baseline example:
+
+python er_main.py --method rand_replay --dataset kddcup99 --mem_size 50
+
+ER-MIR example:
+
+python er_main.py --method mir_replay --dataset kddcup99 --mem_size 50
