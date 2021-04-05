@@ -20,6 +20,8 @@ pip install -r requirements.txt
 
 Data Preprocessing : Run create_train.py and create_test.py
 
+Run resize script to resize images to 8*8 to perform tensor operations of same dimensions
+
 
 
 Running Experiments
